@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TummyDBActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/yellow_white">
+
+        <LinearLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_40sdp"
+                android:layout_marginTop="@dimen/_80sdp"
+                android:text="Tummy Time"
+                android:textAllCaps="true"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/countdown_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="60dp"
+                android:layout_marginLeft="@dimen/_60sdp"
+                android:textColor="@android:color/black"
+                android:textSize="100sp"
+                android:textStyle="bold"
+                tools:text="0:00" />
+
+<!--            <Button-->
+<!--                android:id="@+id/countdown_button"-->
+<!--                android:layout_width="200dp"-->
+<!--                android:layout_height="60dp"-->
+<!--                android:layout_centerHorizontal="false"-->
+<!--                android:layout_marginHorizontal="40dp"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:text="Pause"-->
+<!--                android:textSize="@dimen/_17sdp"-->
+<!--                app:backgroundTint="#07B6A5" />-->
+        <Button
+            android:id="@+id/countdown_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="58dp"
+            android:layout_marginTop="55dp"
+            android:lineSpacingExtra="10sp"
+            android:text="Start"
+            android:backgroundTint="@color/green"
+            android:textColor="@color/white"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button_reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/countdown_text"
+            android:layout_marginLeft="58dp"
+            android:lineSpacingExtra="10sp"
+            android:text="Reset"
+            android:textColor="@color/white"
+            android:backgroundTint="#D0312D"
+            android:textSize="28dp"
+            android:textStyle="bold"
+            android:visibility="invisible"
+            tools:visibility="visible" />
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:textSize="@dimen/_20sdp"
+                android:text="We recommended at least 5 minutes a due for tummy time "/>
+
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

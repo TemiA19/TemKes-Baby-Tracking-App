@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DiaperDBActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/yellow_white">
+
+        <LinearLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:text="Diaper Change"
+            android:textAllCaps="true"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/start_button"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="false"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="10dp"
+            android:text="Click To input Date"
+            android:textSize="@dimen/_17sdp"
+            app:backgroundTint="#FFA701"
+            android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/date_and_time"
+                android:layout_width="match_parent"
+                android:layout_height="53dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/rectangle"
+                android:ems="10"
+                android:hint="Date and Time"
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp"
+                android:text="" />
+
+            <EditText
+                android:id="@+id/diaper_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dp"
+                android:text="@string/status"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="25dp" />
+
+            <Spinner
+                android:id="@+id/sp_diaper_status"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:entries="@array/diaper_status"
+                android:gravity="center"
+                style="@style/Widget.AppCompat.Spinner.Underlined"
+                android:prompt="@string/country_prompt" />
+
+            <EditText
+                android:id="@+id/edt_diaper_note"
+                android:layout_width="match_parent"
+                android:layout_height="133dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/rectanglebigger2"
+                android:ems="10"
+                android:hint="@string/notes"
+                android:inputType="textPersonName"
+                android:paddingBottom="95dp"
+                android:paddingLeft="5dp"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="262dp" />
+
+            <Button
+                android:id="@+id/save_button"
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:layout_centerHorizontal="false"
+                android:layout_marginHorizontal="40dp"
+                android:layout_marginTop="10dp"
+                app:backgroundTint="#FFA701"
+                android:text="save"
+                android:textSize="@dimen/_25sdp"/>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

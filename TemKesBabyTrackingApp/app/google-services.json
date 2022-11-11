@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "440640304201",
+    "project_id": "temkes-baby-tracking-app",
+    "storage_bucket": "temkes-baby-tracking-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:440640304201:android:bd62d82450ccd1a75e3b98",
+        "android_client_info": {
+          "package_name": "com.example.temkesbabyapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "440640304201-s8ejga19k7bj4r87v6a54qe73aoo61o5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5ovjhdD6LY13d53l2e3ose1y23RMFfVI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "440640304201-s8ejga19k7bj4r87v6a54qe73aoo61o5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:440640304201:android:b005ae387aac902c5e3b98",
+        "android_client_info": {
+          "package_name": "com.mobileapp.temkesbabytrackingapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "440640304201-s8ejga19k7bj4r87v6a54qe73aoo61o5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5ovjhdD6LY13d53l2e3ose1y23RMFfVI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "440640304201-s8ejga19k7bj4r87v6a54qe73aoo61o5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

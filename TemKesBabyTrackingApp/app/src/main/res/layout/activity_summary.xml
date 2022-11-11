@@ -1,0 +1,617 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity"
+    android:id="@+id/drawer_layout">
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/yellow_white"
+        android:theme="@style/navigationTheme"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/menu_header"
+        app:menu="@menu/main_menu"/>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SummaryActivity"
+    android:background="@color/yellow_white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize">
+
+                <ImageView
+                    android:id="@+id/menu_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:padding="15dp"
+                    android:src="@drawable/ic_baseline_menu_24"
+                    app:tint="@color/green" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/summary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="20dp"
+                android:text="Today's Summary"
+                android:textColor="#1E4F5E"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/blank_space1"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_weight="1"
+                android:paddingStart="10dp"
+                android:scaleType="fitStart" />
+
+            <ImageView
+                android:id="@+id/imageView11"
+                android:layout_width="180dp"
+                android:layout_height="41dp"
+                android:layout_marginLeft="@dimen/_30sdp"
+                android:paddingStart="10dp"
+                android:scaleType="fitStart"
+                android:src="@drawable/bottle_feeding_nametag" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="27dp"
+                android:layout_marginLeft="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView31"
+                    android:layout_width="119dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Last Time Stamp:"
+                    android:textAllCaps="false"
+                    android:layout_marginLeft="@dimen/_34sdp"
+                    android:textColor="#97C4B1"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/last_date_and_time"
+                    android:layout_width="180dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="27dp"
+                android:layout_marginLeft="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView71"
+                    android:layout_width="283dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Amount of OZ:"
+                    android:layout_marginLeft="@dimen/_34sdp"
+                    android:textColor="#97C4B1"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/last_amount_in_oz"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginLeft="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView81"
+                    android:layout_width="165dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/_34sdp"
+                    android:text="Notes:"
+                    android:textColor="#97C4B1"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txt_last_bf_note"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:hint="(note)"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageView12"
+                android:layout_width="180dp"
+                android:layout_height="41dp"
+                android:layout_marginLeft="@dimen/_30sdp"
+                android:layout_weight="1"
+                android:paddingStart="10dp"
+                android:scaleType="fitStart"
+                android:src="@drawable/breast_feeding_nametag" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView33"
+                    android:layout_width="158dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Last Time Stamp:"
+                    android:layout_marginLeft="@dimen/_34sdp"
+                    android:textAllCaps="false"
+                    android:textColor="#6CA58E"
+                    android:textSize="18sp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:id="@+id/last_date_and_time_breast_feed"
+                    android:layout_width="180dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView32"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="L Breast Feed Time:"
+                    android:layout_marginLeft="@dimen/_34sdp"
+                    android:textAllCaps="false"
+                    android:textColor="#6CA58E"
+                    android:textSize="18sp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:id="@+id/left_breast_feed_time"
+                    android:layout_width="180dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView35"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="R Breast Feed Time:"
+                    android:layout_marginLeft="@dimen/_34sdp"
+                    android:textAllCaps="false"
+                    android:textColor="#6CA58E"
+                    android:textSize="18sp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:id="@+id/right_breast_feed_time"
+                    android:layout_width="180dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:layout_marginLeft="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView82"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Notes:"
+                    android:layout_marginLeft="@dimen/_34sdp"
+                    android:textColor="#6CA58E"
+                    android:textSize="18sp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:id="@+id/txt_note_breast_feed"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:hint="(note)"
+                    android:layout_marginLeft="@dimen/_4sdp"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageView13"
+                android:layout_width="180dp"
+                android:layout_height="36dp"
+                android:layout_marginLeft="@dimen/_30sdp"
+                android:layout_weight="1"
+                android:paddingStart="10dp"
+                android:scaleType="fitStart"
+                android:src="@drawable/meal_feeding_nametag" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="158dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Last Time Stamp:"
+                    android:layout_marginLeft="@dimen/_34sdp"
+                    android:textAllCaps="false"
+                    android:textColor="#45866D"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/last_time_stamp_meals"
+                    android:layout_width="180dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView34"
+                    android:layout_width="@dimen/_160sdp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Last Meal Consumed:"
+                    android:layout_marginLeft="@dimen/_34sdp"
+                    android:textAllCaps="false"
+                    android:textColor="#45866D"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/last_meal_consumed"
+                    android:layout_width="180dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView36"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Last Supplement:"
+                    android:layout_marginLeft="@dimen/_34sdp"
+                    android:textAllCaps="false"
+                    android:textColor="#45866D"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/last_supplement_consumed"
+                    android:layout_width="180dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:layout_marginLeft="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView83"
+                    android:layout_width="160dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Notes:"
+                    android:layout_marginLeft="@dimen/_34sdp"
+                    android:textColor="#45866D"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txt_note_meal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:hint="(note)"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageView14"
+                android:layout_width="180dp"
+                android:layout_height="31dp"
+                android:layout_marginLeft="@dimen/_30sdp"
+                android:layout_weight="1"
+                android:paddingStart="10dp"
+                android:scaleType="fitStart"
+                android:src="@drawable/diaper_change_nametag" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView38"
+                    android:layout_width="119dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Last Time Stamp:"
+                    android:layout_marginLeft="@dimen/_34sdp"
+                    android:textAllCaps="false"
+                    android:textColor="#316651"
+                    android:textSize="18sp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:id="@+id/diaper_last_timestamp"
+                    android:layout_width="180dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView76"
+                    android:layout_width="283dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Last Status:"
+                    android:layout_marginLeft="@dimen/_34sdp"
+                    android:textColor="#316651"
+                    android:textSize="18sp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:id="@+id/edt_diaper_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:layout_marginLeft="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="160dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Notes:"
+                    android:layout_marginLeft="@dimen/_34sdp"
+                    android:textColor="#316651"
+                    android:textSize="18sp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:id="@+id/edt_diaper_note"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:hint="(note)"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageView15"
+                android:layout_width="180dp"
+                android:layout_height="41dp"
+                android:layout_marginLeft="@dimen/_30sdp"
+                android:layout_weight="1"
+                android:paddingStart="10dp"
+                android:scaleType="fitStart"
+                android:src="@drawable/nap_information_nametag" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView30"
+                    android:layout_width="119dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Last Time Stamp:"
+                    android:layout_marginLeft="@dimen/_34sdp"
+                    android:textAllCaps="false"
+                    android:textColor="#17452F"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/nap_last_timestamp"
+                    android:layout_width="180dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView79"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Last Nap Duration:"
+                    android:layout_marginLeft="@dimen/_34sdp"
+                    android:textColor="#17452F"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/edt_nap_duration"
+                    android:layout_width="180dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:layout_marginLeft="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="160dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Notes:"
+                    android:layout_marginLeft="@dimen/_34sdp"
+                    android:textColor="#17452F"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/edt_nap_notes"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:hint="(note)"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/blank_space4"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_weight="1"
+                android:paddingStart="10dp"
+                android:scaleType="fitStart" />
+
+            <ImageView
+                android:id="@+id/blank_space2"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_weight="1"
+                android:paddingStart="10dp"
+                android:scaleType="fitStart" />
+
+            <ImageView
+                android:id="@+id/blank_space3"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_weight="1"
+                android:paddingStart="10dp"
+                android:scaleType="fitStart" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
+</androidx.drawerlayout.widget.DrawerLayout>

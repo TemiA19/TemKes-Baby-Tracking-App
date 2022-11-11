@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/home"
+            android:icon="@drawable/ic_baseline_home_24"
+            android:title="Home"/>
+        <item
+            android:id="@+id/feed"
+            android:icon="@drawable/feeding_bottle"
+            android:title="Feeding" />
+        <item
+            android:id="@+id/diaper"
+            android:icon="@drawable/feeding_bottle"
+            android:title="Diaper" />
+        <item
+            android:id="@+id/sleep"
+            android:icon="@drawable/feeding_bottle"
+            android:title="Sleep" />
+        <item
+            android:id="@+id/chart"
+            android:icon="@drawable/feeding_bottle"
+            android:title="Chart" />
+        <item
+            android:id="@+id/journal"
+            android:icon="@drawable/feeding_bottle"
+            android:title="Memories" />
+        <item
+            android:id="@+id/tt"
+            android:icon="@drawable/feeding_bottle"
+            android:title="Tummy Time" />
+        <item
+            android:id="@+id/weightT"
+            android:icon="@drawable/feeding_bottle"
+            android:title="Weight Tracker" />
+    </group>
+    <item android:title="Profile">
+        <menu>
+            <item
+                android:id="@+id/editProfile"
+                android:icon="@drawable/ic_baseline_people_24"
+                android:title="Edit Porfile"/>
+            <item
+                android:id="@+id/logOut"
+                android:icon="@drawable/ic_baseline_logout_24"
+                android:title="Log Out"/>
+        </menu>
+    </item>
+</menu>

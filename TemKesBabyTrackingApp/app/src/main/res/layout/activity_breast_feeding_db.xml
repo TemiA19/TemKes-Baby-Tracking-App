@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".BreastFeedingDB">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/yellow_white">
+
+        <LinearLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize">
+
+                <ImageView
+                    android:id="@+id/arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    android:src="@drawable/ic_baseline_arrow_back_24"
+                    app:tint="@color/green"
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Breast Feeding"
+                android:layout_marginLeft="@dimen/_30sdp"
+                android:textSize="40sp"
+                android:textAllCaps="true" />
+
+            <Button
+                android:id="@+id/start_button"
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:layout_centerHorizontal="false"
+                android:layout_marginHorizontal="40dp"
+                android:layout_marginTop="10dp"
+                app:backgroundTint="#F47A97"
+                android:text="Click To input date"
+                android:textSize="@dimen/_17sdp"/>
+
+            <EditText
+                android:id="@+id/date_and_time_breastFeeding"
+                android:layout_width="match_parent"
+                android:layout_height="53dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/rectangle"
+                android:ems="10"
+                android:hint="Date and Time"
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp"
+                android:text=""/>
+
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/left"
+                android:layout_width="176dp"
+                android:layout_height="match_parent"
+                android:text="@string/left"
+                android:textAlignment="center"
+                android:textColor="@color/green"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/right"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="@string/right"
+                android:textColor="@color/green"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/left_breast_feed_spinner"
+                style="@android:style/Widget.Holo.Light.Spinner"
+                android:layout_width="175dp"
+                android:layout_height="40dp"
+                android:backgroundTint="#F47A97"
+                android:entries="@array/feeding_time"
+                android:gravity="center"
+                android:prompt="@string/country_prompt" />
+
+            <Spinner
+                android:id="@+id/right_breast_feed_spinner"
+                style="@android:style/Widget.Holo.Light.Spinner"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:entries="@array/feeding_time"
+                android:gravity="center"
+                android:prompt="@string/country_prompt" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/breast_feeding_notes"
+            android:layout_width="match_parent"
+            android:layout_height="210dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rectanglebigger2"
+            android:ems="10"
+            android:hint="@string/notes"
+            android:inputType="textPersonName"
+            android:paddingBottom="180dp"
+            android:paddingLeft="10dp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="262dp" />
+
+        <Button
+            android:id="@+id/save_button"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="false"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="10dp"
+            app:backgroundTint="#F47A97"
+            android:text="save"
+            android:textSize="@dimen/_25sdp"/>
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
